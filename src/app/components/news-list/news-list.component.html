@@ -1,0 +1,19 @@
+<div class="news-list">
+  <div class="header">
+    <h2>Latest News</h2>
+    <button class="refresh-btn" (click)="refreshNews()" [disabled]="loading">
+      {{ loading ? 'Loading...' : 'Refresh' }}
+    </button>
+  </div>
+
+  <!--  LOADING STATE-->
+
+  <!--  ERROR STATE-->
+
+  <!--  NEWS SECTION-->
+
+  @if (!news.length) {
+    <span class="centered-container">No news, bad luck</span>
+  }
+
+</div>
